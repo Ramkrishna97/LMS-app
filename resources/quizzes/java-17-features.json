@@ -1,0 +1,52 @@
+{
+  "title": "Java 17 Features",
+  "description": "Check your understanding of records, sealed classes, text blocks, and modern Java language features.",
+  "durationMinutes": 12,
+  "questions": [
+    {
+      "questionText": "What is a primary use of a Java record?",
+      "optionA": "Represent immutable data carriers concisely",
+      "optionB": "Replace every abstract class",
+      "optionC": "Create mutable global state",
+      "optionD": "Manage database transactions",
+      "correctOption": 0,
+      "solution": "Records provide concise syntax for classes whose main purpose is carrying immutable data."
+    },
+    {
+      "questionText": "Which clause lists the allowed subclasses of a sealed class?",
+      "optionA": "exports",
+      "optionB": "requires",
+      "optionC": "permits",
+      "optionD": "opens",
+      "correctOption": 2,
+      "solution": "The permits clause explicitly names classes that may extend a sealed class."
+    },
+    {
+      "questionText": "Which delimiter starts and ends a Java text block?",
+      "optionA": "Single backticks",
+      "optionB": "Three double quotes",
+      "optionC": "Two single quotes",
+      "optionD": "Square brackets",
+      "correctOption": 1,
+      "solution": "A text block is enclosed by triple double-quote delimiters."
+    },
+    {
+      "questionText": "Pattern matching for instanceof primarily removes which repeated operation?",
+      "optionA": "Object allocation",
+      "optionB": "Method overriding",
+      "optionC": "Explicit casting after a type check",
+      "optionD": "Package importing",
+      "correctOption": 2,
+      "solution": "The matched variable is already typed, avoiding a separate explicit cast."
+    },
+    {
+      "questionText": "Which type may directly implement a sealed interface?",
+      "optionA": "Only a type named in its permits relationship",
+      "optionB": "Every class on the classpath",
+      "optionC": "Only anonymous classes",
+      "optionD": "Only enum constants",
+      "correctOption": 0,
+      "solution": "A sealed hierarchy restricts direct implementations to its permitted types."
+    }
+  ]
+}
