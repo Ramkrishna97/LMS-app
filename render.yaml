@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: learnhub-api
+    runtime: docker
+    plan: 0.5c-512mb
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:h2:file:/var/data/lms
+      - key: APP_CORS_ALLOWED_ORIGINS
+        value: https://*.netlify.app
+    disk:
+      name: learnhub-h2-data
+      mountPath: /var/data
+      sizeGB: 1
