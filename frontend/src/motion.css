@@ -1,0 +1,28 @@
+@keyframes rise-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes soft-appear { from { opacity: 0; } to { opacity: 1; } }
+@keyframes dialog-in { from { opacity: 0; transform: translateY(16px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+.public-hero > div, .welcome > div { animation: rise-in .65s cubic-bezier(.2,.75,.2,1) both; }
+.content-card { animation: rise-in .45s cubic-bezier(.2,.75,.2,1) both; }
+.content-card:nth-child(2) { animation-delay: 55ms; }
+.content-card:nth-child(3) { animation-delay: 110ms; }
+.content-card:nth-child(4) { animation-delay: 165ms; }
+.content-card:nth-child(5) { animation-delay: 220ms; }
+.content-card-button { width: 100%; text-align: left; font: inherit; color: inherit; }
+.content-card-button:focus-visible, .btn:focus-visible, .dialog-close:focus-visible { outline: 3px solid #8998ff; outline-offset: 3px; }
+.content-card:hover .type-icon, .content-card:focus-visible .type-icon { transform: scale(1.08) rotate(-3deg); }
+.type-icon { transition: transform .25s ease; }
+.content-footer b i { display: inline-block; transition: transform .22s ease; }
+.content-card:hover .content-footer b i { transform: translateX(5px); }
+.modal-backdrop-custom { animation: soft-appear .18s ease-out both; }
+.dialog { animation: dialog-in .26s cubic-bezier(.2,.8,.2,1) both; }
+.btn { transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease; }
+.btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 18px #11193824; }
+.upload-zone { transition: border-color .25s ease, background-color .25s ease; }
+.upload-zone:hover, .upload-zone:focus-within { border-color: #6875e7; background: #f1f3ff; }
+.content-thumbnail { display: block; max-width: min(300px,100%); max-height: 150px; object-fit: cover; border-radius: 10px; margin: 4px 0 16px; }
+.detail-image { display: block; width: 100%; max-height: 60vh; object-fit: contain; border-radius: 12px; background: #f5f7fb; }
+.document-frame { display: block; width: 100%; height: min(62vh, 650px); border: 1px solid #dce1ed; border-radius: 10px; background: #f5f7fb; }
+@media (prefers-reduced-motion: reduce) {
+  .public-hero > div, .welcome > div, .content-card, .modal-backdrop-custom, .dialog { animation: none; }
+  .btn, .type-icon, .content-footer b i, .upload-zone { transition: none; }
+}
