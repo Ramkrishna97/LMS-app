@@ -1,0 +1,52 @@
+{
+  "title": "Java Fundamentals",
+  "description": "Test core Java syntax, object-oriented programming, collections, and exception handling.",
+  "durationMinutes": 15,
+  "questions": [
+    {
+      "questionText": "Which keyword creates a subclass in Java?",
+      "optionA": "implements",
+      "optionB": "extends",
+      "optionC": "inherits",
+      "optionD": "super",
+      "correctOption": 1,
+      "solution": "A class uses the extends keyword to inherit from another class."
+    },
+    {
+      "questionText": "Which collection does not allow duplicate elements?",
+      "optionA": "List",
+      "optionB": "Queue",
+      "optionC": "Set",
+      "optionD": "ArrayList",
+      "correctOption": 2,
+      "solution": "Set implementations enforce uniqueness and therefore do not contain duplicate elements."
+    },
+    {
+      "questionText": "What is the default value of an instance boolean field?",
+      "optionA": "true",
+      "optionB": "false",
+      "optionC": "null",
+      "optionD": "0",
+      "correctOption": 1,
+      "solution": "An instance boolean field is initialized to false when no explicit value is supplied."
+    },
+    {
+      "questionText": "Which block always runs after try unless the JVM terminates?",
+      "optionA": "catch",
+      "optionB": "throw",
+      "optionC": "throws",
+      "optionD": "finally",
+      "correctOption": 3,
+      "solution": "The finally block is intended for cleanup and normally executes whether an exception occurs or not."
+    },
+    {
+      "questionText": "Which access modifier restricts a member to its declaring class?",
+      "optionA": "private",
+      "optionB": "protected",
+      "optionC": "public",
+      "optionD": "default",
+      "correctOption": 0,
+      "solution": "A private member is accessible only within the class that declares it."
+    }
+  ]
+}
