@@ -1,0 +1,52 @@
+{
+  "title": "React Fundamentals",
+  "description": "Test components, JSX, props, state, keys, and event handling in React.",
+  "durationMinutes": 15,
+  "questions": [
+    {
+      "questionText": "What is JSX?",
+      "optionA": "A database query language",
+      "optionB": "A syntax extension used to describe React UI",
+      "optionC": "A Java build tool",
+      "optionD": "A CSS preprocessor only",
+      "correctOption": 1,
+      "solution": "JSX is a JavaScript syntax extension that describes the UI React should render."
+    },
+    {
+      "questionText": "How should a component treat its props?",
+      "optionA": "As read-only input",
+      "optionB": "As global mutable variables",
+      "optionC": "As database rows",
+      "optionD": "As CSS rules",
+      "correctOption": 0,
+      "solution": "Props are input supplied by a parent and should not be mutated by the receiving component."
+    },
+    {
+      "questionText": "Why does React need a key for items rendered from an array?",
+      "optionA": "To encrypt the item",
+      "optionB": "To identify items consistently between renders",
+      "optionC": "To sort all values alphabetically",
+      "optionD": "To connect to an API",
+      "correctOption": 1,
+      "solution": "A stable key helps React match each item with its previous rendered counterpart."
+    },
+    {
+      "questionText": "Which prop is used for a browser click event?",
+      "optionA": "onSubmitOnly",
+      "optionB": "onLoadData",
+      "optionC": "onClick",
+      "optionD": "clicked",
+      "correctOption": 2,
+      "solution": "React uses the camel-cased onClick prop for click event handlers."
+    },
+    {
+      "questionText": "What usually happens after a component state update?",
+      "optionA": "React schedules a render with the new state",
+      "optionB": "The browser closes",
+      "optionC": "The component file is deleted",
+      "optionD": "All props become mutable",
+      "correctOption": 0,
+      "solution": "Updating state schedules React to render the affected component with its latest state."
+    }
+  ]
+}

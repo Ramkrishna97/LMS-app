@@ -1,0 +1,52 @@
+{
+  "title": "React Hooks",
+  "description": "Review useState, useEffect, useMemo, useRef, and the Rules of Hooks.",
+  "durationMinutes": 15,
+  "questions": [
+    {
+      "questionText": "Which Hook adds local state to a function component?",
+      "optionA": "useEffect",
+      "optionB": "useState",
+      "optionC": "useRef",
+      "optionD": "useMemo",
+      "correctOption": 1,
+      "solution": "useState returns a state value and a function that schedules updates to it."
+    },
+    {
+      "questionText": "When does an effect with an empty dependency array normally run?",
+      "optionA": "After every render",
+      "optionB": "During every event handler",
+      "optionC": "After the component first mounts",
+      "optionD": "Before JavaScript loads",
+      "correctOption": 2,
+      "solution": "An empty dependency array makes the effect run after the initial mount, with cleanup on unmount."
+    },
+    {
+      "questionText": "What can useRef preserve without causing a render when changed?",
+      "optionA": "A mutable value in its current property",
+      "optionB": "A server database",
+      "optionC": "A CSS file",
+      "optionD": "A component prop definition",
+      "correctOption": 0,
+      "solution": "A ref object persists across renders, and changing current does not trigger a render."
+    },
+    {
+      "questionText": "What is useMemo intended to cache?",
+      "optionA": "A calculated value between renders",
+      "optionB": "Every network request permanently",
+      "optionC": "The entire browser history",
+      "optionD": "A database transaction",
+      "correctOption": 0,
+      "solution": "useMemo can reuse a calculated value while its listed dependencies remain unchanged."
+    },
+    {
+      "questionText": "Where should Hooks be called according to the Rules of Hooks?",
+      "optionA": "Inside loops whenever possible",
+      "optionB": "At the top level of React functions or custom Hooks",
+      "optionC": "Only inside nested callbacks",
+      "optionD": "Only in class constructors",
+      "correctOption": 1,
+      "solution": "Calling Hooks at the top level preserves a consistent call order across renders."
+    }
+  ]
+}
