@@ -1,0 +1,52 @@
+{
+  "title": "Spring Boot Fundamentals",
+  "description": "Test auto-configuration, dependency injection, configuration, and REST controller basics.",
+  "durationMinutes": 15,
+  "questions": [
+    {
+      "questionText": "Which annotation commonly marks the main Spring Boot application class?",
+      "optionA": "@EnableWebMvc",
+      "optionB": "@SpringBootApplication",
+      "optionC": "@RestController",
+      "optionD": "@ConfigurationProperties",
+      "correctOption": 1,
+      "solution": "@SpringBootApplication combines configuration, component scanning, and auto-configuration."
+    },
+    {
+      "questionText": "Which annotation exposes a class whose methods return HTTP response bodies by default?",
+      "optionA": "@Repository",
+      "optionB": "@Service",
+      "optionC": "@RestController",
+      "optionD": "@ComponentScan",
+      "correctOption": 2,
+      "solution": "@RestController combines @Controller behavior with automatic response-body serialization."
+    },
+    {
+      "questionText": "Where are Spring Boot application properties commonly stored?",
+      "optionA": "application.yml or application.properties",
+      "optionB": "package.json",
+      "optionC": "settings.gradle only",
+      "optionD": "web.xml only",
+      "correctOption": 0,
+      "solution": "Spring Boot automatically reads application.properties and application.yml from standard locations."
+    },
+    {
+      "questionText": "Which injection style is generally preferred for required dependencies?",
+      "optionA": "Public field injection",
+      "optionB": "Constructor injection",
+      "optionC": "Static variable injection",
+      "optionD": "Manual global lookup",
+      "correctOption": 1,
+      "solution": "Constructor injection makes required dependencies explicit and supports immutable fields and testing."
+    },
+    {
+      "questionText": "What does Spring Boot auto-configuration use to choose configurations?",
+      "optionA": "Only the operating system name",
+      "optionB": "Classpath contents and configured conditions",
+      "optionC": "Only the project folder name",
+      "optionD": "Random selection",
+      "correctOption": 1,
+      "solution": "Auto-configuration activates conditionally based on dependencies, beans, properties, and other context."
+    }
+  ]
+}

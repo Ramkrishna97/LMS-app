@@ -1,0 +1,52 @@
+{
+  "title": "Spring Data JPA",
+  "description": "Review entities, repositories, relationships, transactions, and derived queries.",
+  "durationMinutes": 15,
+  "questions": [
+    {
+      "questionText": "Which annotation marks a class as a JPA entity?",
+      "optionA": "@Entity",
+      "optionB": "@Bean",
+      "optionC": "@Documented",
+      "optionD": "@ResponseBody",
+      "correctOption": 0,
+      "solution": "@Entity tells the JPA provider that the class is mapped to persistent data."
+    },
+    {
+      "questionText": "Which repository interface provides basic CRUD operations?",
+      "optionA": "ApplicationContext",
+      "optionB": "CrudRepository",
+      "optionC": "BeanFactory",
+      "optionD": "HandlerInterceptor",
+      "correctOption": 1,
+      "solution": "CrudRepository defines common save, find, count, and delete operations."
+    },
+    {
+      "questionText": "What does mappedBy identify on the inverse side of a relationship?",
+      "optionA": "The database password",
+      "optionB": "The owning-side field",
+      "optionC": "The controller route",
+      "optionD": "The build task",
+      "correctOption": 1,
+      "solution": "mappedBy refers to the field that owns and stores the relationship mapping."
+    },
+    {
+      "questionText": "Which annotation defines a transactional boundary?",
+      "optionA": "@Transactional",
+      "optionB": "@GeneratedValue",
+      "optionC": "@RequestParam",
+      "optionD": "@JsonIgnore",
+      "correctOption": 0,
+      "solution": "@Transactional instructs Spring to execute the method within a managed transaction."
+    },
+    {
+      "questionText": "What can findByEmailAndActive express in a Spring Data repository?",
+      "optionA": "A derived query based on method-name properties",
+      "optionB": "A frontend route",
+      "optionC": "A Gradle plugin",
+      "optionD": "A database migration file",
+      "correctOption": 0,
+      "solution": "Spring Data can derive a query from supported property names and operators in a repository method."
+    }
+  ]
+}

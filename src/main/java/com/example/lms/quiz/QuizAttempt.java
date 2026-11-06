@@ -1,0 +1,3 @@
+package com.example.lms.quiz;
+import com.example.lms.user.User; import jakarta.persistence.*; import java.time.Instant;
+@Entity public class QuizAttempt { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; @ManyToOne private Quiz quiz; @ManyToOne private User student; private int score; private int total; private Instant completedAt=Instant.now(); protected QuizAttempt(){} public QuizAttempt(Quiz q,User s,int score,int total){quiz=q;student=s;this.score=score;this.total=total;} public Long getId(){return id;} public int getScore(){return score;} public int getTotal(){return total;} public Instant getCompletedAt(){return completedAt;} }
